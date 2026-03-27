@@ -3,84 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Soham Sharma | Computer Science Undergraduate | Portfolio showcasing projects, research, skills, and contact information.">
   <title>Soham Sharma | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- HEADER / HERO -->
-  <header>
-    <img src="images/pic1.jpg" alt="Profile Photo" class="profile">
+  <header id="hero">
+    <img src="images/pic1.jpg" alt="Profile Photo of Soham Sharma" class="profile">
     <h1>Soham Sharma</h1>
-    <p>Computer Science Undergraduate | VIT Vellore</p>
-    <p>Interested in Software Development, Problem Solving, and Computational Science</p>
+    <p class="tagline">Aspiring Software Developer | Data Enthusiast | Crystal Researcher</p>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
-    <img src="images/pic2.jpg" alt="About Photo" width="200">
-    <p>
-      I am a first-year Computer Science and Engineering student at VIT Vellore with a strong interest in programming, problem-solving, and computational analysis. I have experience in Python, C, and C++ and am actively developing my skills in data structures, algorithms, and software development. 
-      Alongside my coursework, I am passionate about applying computational methods to real-world problems, particularly in scientific research and engineering. I enjoy learning new technologies, collaborating on projects, and contributing to communities like the Geospatial Club and ISA Club.
-    </p>
+    <div class="about-container">
+      <img src="images/pic2.jpg" alt="Soham Sharma working" class="about-photo">
+      <p>
+        I am a first-year Computer Science and Engineering student at VIT Vellore with a passion for programming, problem-solving, and computational analysis. I have experience in <strong>Python, C, and C++</strong> and am actively developing my skills in <strong>data structures, algorithms, and software development</strong>.
+      </p>
+      <p>
+        I enjoy applying computational methods to real-world problems, collaborating on projects, and contributing to communities like the <em>Geospatial Club</em> and <em>ISA Club</em>. I am constantly learning new technologies and exploring innovative ways to solve complex challenges.
+      </p>
+    </div>
   </section>
 
   <!-- RESEARCH -->
   <section id="research">
     <h2>Research: Crystal Growth & Nucleation</h2>
     <p>
-      I am currently working on a research project focused on nucleation studies and crystal growth. This involves studying how microscopic structures form and evolve under controlled laboratory conditions.
-      The goal of this research is to better understand the factors that influence crystal formation, such as temperature, concentration, and environmental stability, which can have applications in materials science and chemical engineering.
-      I am gaining hands-on experience with lab techniques, data collection, and scientific analysis, as well as applying computational methods to model and simulate crystal growth behavior.
+      My current research focuses on nucleation studies and crystal growth, analyzing how microscopic structures form and evolve under controlled laboratory conditions. The project combines hands-on lab work, data collection, and computational simulations to understand factors like temperature, concentration, and environmental stability that influence crystal formation.
     </p>
 
-    <h3>Crystal Samples</h3>
-    <img src="images/cryst1.jpeg" width="200">
-    <img src="images/cryst2.jpeg" width="200">
-    <img src="images/cryst4.jpeg" width="200">
+    <div class="research-gallery">
+      <h3>Crystal Samples</h3>
+      <img src="images/cryst1.jpeg" alt="Crystal Sample 1" class="research-image">
+      <img src="images/cryst2.jpeg" alt="Crystal Sample 2" class="research-image">
+      <img src="images/cryst4.jpeg" alt="Crystal Sample 3" class="research-image">
+    </div>
 
-    <h3>Experimental Setup</h3>
-    <p>Petri dish with crystal formation:</p>
-    <img src="images/cryst3.jpeg" width="250">
-
-    <p>Constant temperature bath:</p>
-    <img src="images/const_temp.jpeg" width="250">
+    <div class="research-setup">
+      <h3>Experimental Setup</h3>
+      <figure>
+        <img src="images/cryst3.jpeg" alt="Petri dish with crystal formation" class="research-image">
+        <figcaption>Petri dish showing crystal formation</figcaption>
+      </figure>
+      <figure>
+        <img src="images/const_temp.jpeg" alt="Constant temperature bath for crystal growth" class="research-image">
+        <figcaption>Constant temperature bath</figcaption>
+      </figure>
+    </div>
   </section>
 
   <!-- EXPERIENCE / CLUBS -->
   <section id="experience">
     <h2>Experience & Activities</h2>
     <ul>
-      <li>Active member of Geospatial Club</li>
-      <li>Active member of ISA Club</li>
+      <li>Active member of <strong>Geospatial Club</strong></li>
+      <li>Active member of <strong>ISA Club</strong></li>
     </ul>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>Nucleation Studies and Crystal Growth</strong>: Research project exploring computational and scientific analysis of crystal formation.</li>
-      <li><em>Future projects coming soon</em></li>
-    </ul>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Nucleation Studies and Crystal Growth</h3>
+        <p>
+          Research project exploring computational and scientific analysis of crystal formation.
+        </p>
+        <a href="#" class="button">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Future Projects</h3>
+        <p>More projects coming soon!</p>
+      </div>
+    </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>Experience with Python, C, C++</li>
-      <li>Data Structures & Algorithms (learning)</li>
-      <li>Problem-solving and analytical thinking</li>
-    </ul>
+    <div class="skills-list">
+      <div class="skill">
+        <h4>Python</h4>
+        <div class="skill-bar"><span style="width: 75%"></span></div>
+      </div>
+      <div class="skill">
+        <h4>C / C++</h4>
+        <div class="skill-bar"><span style="width: 70%"></span></div>
+      </div>
+      <div class="skill">
+        <h4>Data Structures & Algorithms</h4>
+        <div class="skill-bar"><span style="width: 50%"></span></div>
+      </div>
+    </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: sharmasoham1807@gmail.com</p>
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sharmasoham1807@gmail.com">sharmasoham1807@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/Soham-git-0" target="_blank">github.com/Soham-git-0</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/soham-sharma1" target="_blank">linkedin.com/in/your-linkedin</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/soham-sharma1" target="_blank">linkedin.com/in/soham-sharma1</a></p>
+
+    <!-- Optional contact form -->
+    <form action="#" method="POST" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Soham Sharma. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
