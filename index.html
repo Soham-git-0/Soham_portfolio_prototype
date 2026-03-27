@@ -6,7 +6,7 @@
   <meta name="description" content="Soham Sharma | Computer Science Undergraduate | Portfolio showcasing projects, research, skills, and contact information.">
   <title>Soham Sharma | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts for better typography -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -17,11 +17,11 @@
     <p class="tagline">Aspiring Software Developer | Data Enthusiast | Crystal Researcher</p>
     <nav>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" style="color: #ffffff;">About</a></li>
+        <li><a href="#research" style="color: #ffffff;">Research</a></li>
+        <li><a href="#projects" style="color: #ffffff;">Projects</a></li>
+        <li><a href="#skills" style="color: #ffffff;">Skills</a></li>
+        <li><a href="#contact" style="color: #ffffff;">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -30,7 +30,8 @@
   <section id="about">
     <h2>About Me</h2>
     <div class="about-container">
-      <img src="images/pic2.jpg" alt="Soham Sharma working" class="about-photo">
+      <!-- Reduced back to original width -->
+      <img src="images/pic2.jpg" alt="Soham Sharma working" width="200">
       <p>
         I am a first-year Computer Science and Engineering student at VIT Vellore with a passion for programming, problem-solving, and computational analysis. I have experience in <strong>Python, C, and C++</strong> and am actively developing my skills in <strong>data structures, algorithms, and software development</strong>.
       </p>
@@ -49,21 +50,18 @@
 
     <div class="research-gallery">
       <h3>Crystal Samples</h3>
-      <img src="images/cryst1.jpeg" alt="Crystal Sample 1" class="research-image">
-      <img src="images/cryst2.jpeg" alt="Crystal Sample 2" class="research-image">
-      <img src="images/cryst4.jpeg" alt="Crystal Sample 3" class="research-image">
+      <!-- Restored original sizes -->
+      <img src="images/cryst1.jpeg" width="200" alt="Crystal Sample 1">
+      <img src="images/cryst2.jpeg" width="200" alt="Crystal Sample 2">
+      <img src="images/cryst4.jpeg" width="200" alt="Crystal Sample 3">
     </div>
 
     <div class="research-setup">
       <h3>Experimental Setup</h3>
-      <figure>
-        <img src="images/cryst3.jpeg" alt="Petri dish with crystal formation" class="research-image">
-        <figcaption>Petri dish showing crystal formation</figcaption>
-      </figure>
-      <figure>
-        <img src="images/const_temp.jpeg" alt="Constant temperature bath for crystal growth" class="research-image">
-        <figcaption>Constant temperature bath</figcaption>
-      </figure>
+      <p>Petri dish with crystal formation:</p>
+      <img src="images/cryst3.jpeg" width="250" alt="Petri dish with crystal formation">
+      <p>Constant temperature bath:</p>
+      <img src="images/const_temp.jpeg" width="250" alt="Constant temperature bath for crystal growth">
     </div>
   </section>
 
@@ -120,7 +118,6 @@
     <p>GitHub: <a href="https://github.com/Soham-git-0" target="_blank">github.com/Soham-git-0</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/soham-sharma1" target="_blank">linkedin.com/in/soham-sharma1</a></p>
 
-    <!-- Optional contact form -->
     <form action="#" method="POST" class="contact-form">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
