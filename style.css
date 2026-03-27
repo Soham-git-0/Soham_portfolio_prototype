@@ -13,10 +13,12 @@ body {
 a {
   color: #1a73e8;
   text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
 }
 
 a:hover {
   text-decoration: underline;
+  transform: scale(1.05);
 }
 
 /* -------------------------------
@@ -39,14 +41,39 @@ header p {
   font-size: 1.1rem;
 }
 
+header nav {
+  margin-top: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .profile {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #fff;
+  margin-bottom: 20px;
 }
-
 
 /* -------------------------------
    Sections
@@ -54,9 +81,8 @@ header p {
 section {
   padding: 50px 20px;
   max-width: 1000px;
-  margin: auto;
+  margin: 20px auto;
   background-color: #fff;
-  margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
@@ -65,6 +91,7 @@ section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #1a73e8;
+  text-align: center;
 }
 
 section h3 {
@@ -78,6 +105,19 @@ section p {
   margin-bottom: 15px;
 }
 
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-container img {
+  border-radius: 10px;
+  max-width: 200px;
+  height: auto;
+}
+
 /* -------------------------------
    Images in Sections
 --------------------------------- */
@@ -87,6 +127,11 @@ section img {
   max-width: 100%;
   height: auto;
   display: inline-block;
+  transition: transform 0.3s;
+}
+
+section img:hover {
+  transform: scale(1.05);
 }
 
 /* -------------------------------
@@ -103,11 +148,79 @@ li {
 }
 
 /* -------------------------------
+   Project Cards
+--------------------------------- */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #f7f8fc;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* -------------------------------
+   Skills
+--------------------------------- */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skill h4 {
+  margin: 0 0 5px 0;
+}
+
+.skill-bar {
+  width: 100%;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 15px;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background-color: #1a73e8;
+  border-radius: 5px 0 0 5px;
+}
+
+/* -------------------------------
    Contact Links
 --------------------------------- */
 #contact a {
   color: #1a73e8;
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: #155ab6;
+}
+
+/* -------------------------------
+   Footer
+--------------------------------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a73e8;
+  color: #fff;
+  margin-top: 30px;
 }
 
 /* -------------------------------
@@ -126,5 +239,15 @@ li {
     max-width: 100%;
     display: block;
     margin: 10px auto;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
   }
 }
