@@ -185,8 +185,9 @@ li {
 }
 
 /* Remove the skill bars completely */
-.skill-bar {
-  display: none; /* Hide progress bars */
+.skill-bar,
+.skill-bar span {
+  display: none !important; /* Force hide */
 }
 
 /* -------------------------------
